@@ -255,10 +255,6 @@ button:hover{
     color: var(--lime-green);
 }
 
-.icons > img:hover{
-
-}
-
 .hamburger{
     display:none;
 }
@@ -307,6 +303,26 @@ button:hover{
     color: var(--dark-blue);
 }
 
+#facebook:hover{
+    content: url("images/icon-facebook-hover.svg");
+}
+
+#twitter:hover{
+    content: url("images/icon-twitter-hover.svg");
+}
+
+#pinterest:hover{
+    content: url("images/icon-pinterest-hover.svg");
+}
+
+#instagram:hover{
+    content: url("images/icon-instagram-hover.svg");
+}
+
+#youtube:hover{
+    content: url("images/icon-youtube-hover.svg");
+}
+
 @media only screen and (max-width:970px){
     nav{
         padding-right: 10px;
@@ -320,6 +336,7 @@ button:hover{
 @media only screen and (max-width: 670px){
     .links{
         grid-template-columns: auto;
+        text-align: center;
     }
     .hamburger{
         display:block;
