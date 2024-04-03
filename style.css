@@ -11,6 +11,7 @@
 body{
     font-family: "Public Sans", sans-serif;
     margin:0;
+    overflow-x:hidden;
 }
 
 .articleContainer{
@@ -63,7 +64,9 @@ button{
 }
 
 #mainSection{
+    display:flex;
     background-color: white;
+    padding-right: 0;
 }
 
 #featuresSection{
@@ -129,12 +132,15 @@ section{
 }
 
 nav{
+    top:0;
     position: sticky;
     height: 10vh;
     padding:0 10vw;
     display: flex;
     align-items: center;
     justify-content: flex-start;
+    z-index: 2;
+    background-color: white;
 }
 
 nav > img{
@@ -167,9 +173,66 @@ nav > a{
 footer{
     background-color: var(--dark-blue);
     width: 100vw;
-    height: 20vh;
+    height: 30vh;
 }
 
 .footer{
+    height: 100%;
+    margin-left: 10vw;
+    margin-right: 10vw;
     display: flex;
+    align-items: center;
+}
+
+.socials{
+    height: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.links{
+    display:grid;
+    grid-template-columns: auto auto;
+    column-gap: 10vw;
+    row-gap: 2vh;
+    padding-left: 10vw;
+}
+
+.links > a{
+    color: var(--light-grayish-blue);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.copyright{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    margin-left:auto;
+}
+
+.copyright > p{
+    color: var(--grayish-blue);
+}
+
+.phoneGraphic{
+    flex-grow: 1;
+    overflow:hidden;
+    position: relative;
+}
+
+#basegraphic{
+    position: absolute;
+    left: 5vw;
+    top:-40vh;
+}
+
+#mockups{
+    position: absolute;
+    top:-15vh;
+    left:60vw;
+    height: 120vh;
 }
