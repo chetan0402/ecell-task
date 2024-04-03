@@ -4,10 +4,10 @@ burger.addEventListener('click',()=>{
     if(burgerImg.src.includes("/images/icon-close.svg")){
         burgerImg.src = '/images/icon-hamburger.svg';
         const burgerContainer=document.getElementsByClassName('burgerContainer')[0];
-        burgerContainer.style.display="none";
+        burgerContainer.style.opacity=0;
         return;
     }
     const burgerContainer=document.getElementsByClassName('burgerContainer')[0];
-    burgerContainer.style.display="flex";
+    burgerContainer.style.opacity=1;
     burgerImg.src = '/images/icon-close.svg';
 });
