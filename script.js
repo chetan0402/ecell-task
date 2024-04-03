@@ -11,3 +11,18 @@ burger.addEventListener('click',()=>{
     burgerContainer.style.opacity=1;
     burgerImg.src = '/images/icon-close.svg';
 });
+
+document.addEventListener('DOMContentLoaded', () => {
+    document.body.style.opacity = 1;
+});
+
+document.addEventListener("scroll", () => {
+    const sections=document.querySelectorAll('section');
+    for(var i=0;i<sections.length;i++){
+        const section=sections[i];
+        const bounding=section.getBoundingClientRect();
+        if (bounding.top <= window.innerHeight-100) {
+            section.style.opacity = 1;
+        }
+    }
+});
