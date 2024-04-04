@@ -18,9 +18,6 @@
     background: var(--grayish-blue);
     border-radius: 10px;
 }
-::-webkit-scrollbar-thumb:hover{
-    background: #95c599;
-}
 
 body{
     font-family: "Public Sans", sans-serif;
@@ -74,7 +71,6 @@ button{
     appearance: none;
     border:none;
     border-radius: 50px;
-    background: #31D341;
     background: linear-gradient(135deg, #31D341, #2BB7DA);
     font-weight: 700;
     cursor: pointer;

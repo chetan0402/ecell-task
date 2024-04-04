@@ -1,3 +1,6 @@
+var letterIndex=0;
+const actualHeading="Next generation digital banking";
+
 const burger=document.getElementsByClassName("hamburger")[0];
 burger.addEventListener('click',()=>{
     const burgerImg = burger.querySelector('img');
@@ -15,7 +18,10 @@ burger.addEventListener('click',()=>{
 });
 
 document.addEventListener('DOMContentLoaded', () => {
+    const mainHeading=document.querySelector(".leftContent h1");
+    mainHeading.innerText=createRandomString(4)+" "+createRandomString(10) + " " + createRandomString(7)+" "+createRandomString(7);
     document.body.style.opacity = 1;
+    setTimeout(typeHeading,500);
 });
 
 document.addEventListener("scroll", () => {
@@ -28,3 +34,23 @@ document.addEventListener("scroll", () => {
         }
     }
 });
+
+function typeHeading(){
+    const heading=document.querySelector(".leftContent h1");
+    if(letterIndex<actualHeading.length){
+        const currentHeading=heading.innerText;
+        heading.innerText=currentHeading.substring(0,letterIndex)+actualHeading.charAt(letterIndex)+currentHeading.substring(letterIndex+1);
+        letterIndex++;
+        setTimeout(typeHeading,50);
+    }
+}
+
+function createRandomString(length) {
+    const chars = "abcdefghijklmnopqrstuvwxyz0123456789";
+    let result = "";
+    for (let i = 0; i < length; i++) {
+      result += chars.charAt(Math.floor(Math.random() * chars.length));
+    }
+    return result;
+  }
+  
