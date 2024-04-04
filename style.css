@@ -452,13 +452,15 @@ button:hover{
     }
 
     #mainSection{
+        padding-left: 5vw;
+        padding-right: 5vw;
         height:140vw;
         text-align: center;
         padding-bottom: 10vh;
     }
 
     #mainSection h1 {
-        font-size: 40px;
+        font-size: 35px;
         padding: 0 5vw;
     }
 
