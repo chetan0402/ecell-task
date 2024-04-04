@@ -8,12 +8,27 @@
     --normal-text-size: 18px;
 }
 
+::-webkit-scrollbar{
+    width:10px;
+}
+::-webkit-scrollbar-track{
+    background: var(--very-light-gray);
+}
+::-webkit-scrollbar-thumb{
+    background: var(--grayish-blue);
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #95c599;
+}
+
 body{
     font-family: "Public Sans", sans-serif;
     margin:0;
     opacity: 0;
     transition: opacity 1s;
     overflow-x:hidden;
+    cursor: default;
 }
 
 .articleContainer{
@@ -62,6 +77,7 @@ button{
     background: #31D341;
     background: linear-gradient(135deg, #31D341, #2BB7DA);
     font-weight: 700;
+    cursor: pointer;
 }
 
 #mainSection{
@@ -322,6 +338,7 @@ button:hover{
 
 .icons > svg{
     padding: 5px;
+    cursor: pointer;
 }
 
 @media only screen and (max-width:970px){
