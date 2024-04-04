@@ -252,7 +252,7 @@ nav > a:hover{
 }
 
 button:hover{
-    background: linear-gradient(-45deg, #31D341, #2BB7DA);
+    background: linear-gradient(-45deg, #92fc9e, #91e4f9);
 }
 
 .article > h2:hover{
@@ -312,31 +312,15 @@ button:hover{
     color: var(--dark-blue);
 }
 
-#facebook:hover{
-    content: url("images/icon-facebook-hover.svg");
-}
-
-#twitter:hover{
-    content: url("images/icon-twitter-hover.svg");
-}
-
-#pinterest:hover{
-    content: url("images/icon-pinterest-hover.svg");
-}
-
-#instagram:hover{
-    content: url("images/icon-instagram-hover.svg");
-}
-
-#youtube:hover{
-    content: url("images/icon-youtube-hover.svg");
+.icons > svg:hover > path{
+    fill: var(--lime-green);
 }
 
 #articleSection > h1{
     text-align: center;
 }
 
-.icons > img{
+.icons > svg{
     padding: 5px;
 }
 
@@ -478,7 +462,7 @@ button:hover{
         padding: 0 5vw;
     }
 
-    #featuresSection h1,#featuresSection > p{
+    #featuresSection h1,#featuresSection p{
         text-align: center;
     }
 }
