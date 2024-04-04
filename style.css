@@ -288,7 +288,7 @@ button:hover{
     height: 90vh;
     width: 100vw;
     background: linear-gradient(180deg, rgba(60, 64, 65, 0.8), rgba(0,0,0,0));
-    z-index: 2;
+    z-index: -1;
     opacity: 0;
     transition: opacity 0.5s;
 }
@@ -414,8 +414,10 @@ button:hover{
     }
 
     .articleContainer{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
     }
 
     .articleContainer > h1{
@@ -471,7 +473,12 @@ button:hover{
         padding-bottom: 10vh;
     }
 
-    #mainSection h1{
+    #mainSection h1 {
         font-size: 40px;
+        padding: 0 5vw;
+    }
+
+    #featuresSection h1,#featuresSection > p{
+        text-align: center;
     }
 }

@@ -5,10 +5,12 @@ burger.addEventListener('click',()=>{
         burgerImg.src = '/images/icon-hamburger.svg';
         const burgerContainer=document.getElementsByClassName('burgerContainer')[0];
         burgerContainer.style.opacity=0;
+        burgerContainer.style.zIndex=-1;
         return;
     }
     const burgerContainer=document.getElementsByClassName('burgerContainer')[0];
     burgerContainer.style.opacity=1;
+    burgerContainer.style.zIndex=2;
     burgerImg.src = '/images/icon-close.svg';
 });
 
